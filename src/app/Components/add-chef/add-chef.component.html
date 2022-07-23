@@ -1,0 +1,32 @@
+
+<div class="d-flex flex-row justify-content-between">
+    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png"  class="navbar-image " alt="" />
+    <button class="btn btn-warning m-3 " (click)="returnhome()"> <i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+</div>
+    <div class="employee-container">
+
+        <h1 class="form-name">      Chef Registration Form    </h1>
+        <div class="details-card-chef ">
+            <div class="card_chef  ">
+                <form #addchef="" (ngSubmit) ="addchefform()">
+                  
+                    <div class="container">
+
+                        <label for="cEmail"><b>Chef Email</b></label>
+                        <input type="email" placeholder="Enter Chef Email" id="email"  required name="cEmail">
+
+                        <label for="cPassword"><b>Chef Password</b></label>
+                        <input type="password" placeholder="Enter Chef password " id="pass"  required>
+
+                        <label for="cName"><b>Chef Name</b></label>
+                        <input type="text" placeholder="Enter chef " id="name" required>
+
+                        <label for="cPhone"><b>Chefd Phone</b></label>
+                        <input type="tel" placeholder="Enter Chef Phone no" id="phone" required>
+
+                        <button type="submit" class="btn btn-warning" (click)="addnewchef()">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
